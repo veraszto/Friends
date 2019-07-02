@@ -1,0 +1,94 @@
+
+body
+{
+margin:0;
+font-family:'Arial';
+}
+
+
+input
+{
+display:block;
+width:100%;
+padding:.5em;
+box-sizing:border-box;
+margin:.5em 0;
+border:1px solid grey;
+}
+
+p.title,
+button
+{
+text-transform:uppercase;
+font-size:1.25em;
+}
+
+button
+{
+border:1px solid grey;
+width:100%;
+}
+
+.main-container
+{
+width:50em;
+display:flex;
+/*border:1px solid DarkBlue;*/
+}
+
+@media screen and (max-width:799px)
+{
+	.main-container
+	{
+		width:auto;
+		font-size:x-small;
+		height:100%;
+	}
+	html,
+	body
+	{
+		height:100%;
+	}
+}
+
+.main-container > section
+{
+	flex:11;
+/*	border:1px solid Crimson;*/
+}
+
+.main-container > section.left-pic-pane
+{
+background-color:DarkGoldenRod;
+}
+
+.main-container > section.right
+{
+	flex:9;
+	margin-left:1em;
+	padding-right:.5em;
+}
+
+section.wishlist
+{
+	margin-top:5em;
+}
+
+div.input-label
+{
+	overflow:hidden;
+}
+
+div.input-label > label
+{
+float:right;
+line-height:3em;
+margin-right:1em;
+}
+div.input-label > input
+{
+float:left;
+width:50%;
+}
+
+
